@@ -21,7 +21,7 @@
 
             <LinearLayout style="@style/Row">
                 <LinearLayout style="@style/Col">
-                    <Button style="@style/Button"
+                    <Button android:id="@+id/btnAddNumbers" style="@style/Button"
                         android:text="Add Two Numbers">
                     </Button>
                 </LinearLayout>

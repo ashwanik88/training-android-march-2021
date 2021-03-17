@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">#EFEFEF</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">10</item>
+    </style>
+    <style name="Col">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">#851818</item>
+        <item name="android:textColor">#F8F8F8</item>
+    </style>
+
+</resources>
