@@ -34,9 +34,11 @@
 
             <LinearLayout style="@style/Row">
                 <LinearLayout style="@style/Col">
-                    <Button style="@style/Button"
-                        android:text="Add Two Numbers">
-                    </Button>
+
+                    <Button
+                        android:id="@+id/btnCalc"
+                        style="@style/Button"
+                        android:text="Calculator"></Button>
                 </LinearLayout>
                 <LinearLayout style="@style/Col">
                     <Button style="@style/Button"

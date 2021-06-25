@@ -15,14 +15,23 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         Button btnAddNumbers = findViewById(R.id.btnAddNumbers);
+        Button btnCalc = findViewById(R.id.btnCalc);
 
         btnAddNumbers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Dashboard.this, MainActivity.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                // i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
-                finish(); //return to the first layout
+                // finish(); //return to the first layout
+            }
+        });
+
+        btnCalc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent abc = new Intent(Dashboard.this, Calculator.class);
+                startActivity(abc);
             }
         });
 
