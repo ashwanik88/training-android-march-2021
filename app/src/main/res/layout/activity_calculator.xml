@@ -12,6 +12,7 @@
         android:layout_height="60dp">
 
         <EditText
+            android:id="@+id/txtOutput"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         </EditText>
@@ -31,11 +32,11 @@
             >
 
             <Button
+                android:id="@+id/btn7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:text="7"></Button>
 
-                android:text="9"></Button>
-
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -44,6 +45,19 @@
             android:layout_margin="4dp"
             >
             <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8"></Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:layout_margin="4dp"
+            >
+            <Button
+                android:id="@+id/btn9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="9"></Button>
@@ -55,24 +69,69 @@
             android:layout_margin="4dp"
             >
             <Button
+                android:id="@+id/btnPlus"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="9"></Button>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="2"
-            android:layout_margin="4dp"
-            >
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="9"></Button>
+                android:text="+"></Button>
         </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="8"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:layout_margin="4dp"
+            >
 
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4"></Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:layout_margin="4dp"
+            >
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5"></Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:layout_margin="4dp"
+            >
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6"></Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:layout_margin="4dp"
+            >
+            <Button
+                android:id="@+id/btnEqual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="="></Button>
+        </LinearLayout>
+    </LinearLayout>
 
 
 </LinearLayout>
