@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tr">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">8</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:orientation">horizontal</item>
+
+    </style>
+
+    <style name="td">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="btnCalc">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">32dp</item>
+    </style>
+
+    <style name="txtOut">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">48dp</item>
+        <item name="android:gravity">right|center</item>
+
+    </style>
+</resources>

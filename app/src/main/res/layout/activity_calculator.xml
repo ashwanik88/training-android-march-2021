@@ -6,132 +6,152 @@
     android:layout_height="match_parent"
     tools:context=".Calculator" android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="12" android:orientation="vertical">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_height="60dp"
+        android:layout_weight="2"
+        >
 
         <EditText
             android:id="@+id/txtOutput"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            style="@style/txtOut"
+            >
         </EditText>
 
     </LinearLayout>
+    <LinearLayout style="@style/tr">
+            <LinearLayout style="@style/td">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:weightSum="8"
-        >
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="2"
-            android:layout_margin="4dp"
-            >
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/btn7"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="7"></Button>
+            <LinearLayout style="@style/td">
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/td">
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/td">
+                <Button android:id="@+id/btnAC" android:text="AC"
+                    style="@style/btnCalc"
+                    ></Button>
+            </LinearLayout>
 
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="2"
-            android:layout_margin="4dp"
-            >
-            <Button
-                android:id="@+id/btn8"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="8"></Button>
+
+    <LinearLayout style="@style/tr">
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btn7" android:text="7"
+                style="@style/btnCalc"
+                ></Button>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="2"
-            android:layout_margin="4dp"
-            >
-            <Button
-                android:id="@+id/btn9"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="9"></Button>
+
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btn8" android:text="8"
+                style="@style/btnCalc"
+                ></Button>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="2"
-            android:layout_margin="4dp"
-            >
-            <Button
-                android:id="@+id/btnPlus"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="+"></Button>
+
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btn9" android:text="9"
+                style="@style/btnCalc"
+                ></Button>
+        </LinearLayout>
+
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btnPlus" android:text="+"
+                style="@style/btnCalc"
+                ></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout style="@style/tr">
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btn4" android:text="4"
+                style="@style/btnCalc"
+                ></Button>
+        </LinearLayout>
+
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btn5" android:text="5"
+                style="@style/btnCalc"
+                ></Button>
+        </LinearLayout>
+
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btn6" android:text="6"
+                style="@style/btnCalc"
+                ></Button>
+        </LinearLayout>
+
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btnMinus" android:text="-"
+                style="@style/btnCalc"
+                ></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout style="@style/tr">
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btn1" android:text="1"
+                style="@style/btnCalc"
+                ></Button>
+        </LinearLayout>
+
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btn2" android:text="2"
+                style="@style/btnCalc"
+                ></Button>
+        </LinearLayout>
+
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btn3" android:text="3"
+                style="@style/btnCalc"
+                ></Button>
+        </LinearLayout>
+
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btnDivide" android:text="/"
+                style="@style/btnCalc"
+                ></Button>
         </LinearLayout>
     </LinearLayout>
+    <LinearLayout style="@style/tr">
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btnDot" android:text="."
+                style="@style/btnCalc"
+                ></Button>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:weightSum="8"
-        >
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="2"
-            android:layout_margin="4dp"
-            >
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btn0" android:text="0"
+                style="@style/btnCalc"
+                ></Button>
+        </LinearLayout>
 
-            <Button
-                android:id="@+id/btn4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="4"></Button>
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btnEqual" android:text="="
+                style="@style/btnCalc"
+                ></Button>
+        </LinearLayout>
 
+        <LinearLayout style="@style/td">
+            <Button android:id="@+id/btnMulti" android:text="*"
+                style="@style/btnCalc"
+                ></Button>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="2"
-            android:layout_margin="4dp"
-            >
-            <Button
-                android:id="@+id/btn5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="5"></Button>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="2"
-            android:layout_margin="4dp"
-            >
-            <Button
-                android:id="@+id/btn6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="6"></Button>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="2"
-            android:layout_margin="4dp"
-            >
-            <Button
-                android:id="@+id/btnEqual"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="="></Button>
-        </LinearLayout>
+
     </LinearLayout>
 
+
+    </LinearLayout>
 
 </LinearLayout>
