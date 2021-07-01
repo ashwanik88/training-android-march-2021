@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 public class Dashboard extends AppCompatActivity {
 
@@ -16,6 +17,8 @@ public class Dashboard extends AppCompatActivity {
 
         Button btnAddNumbers = findViewById(R.id.btnAddNumbers);
         Button btnCalc = findViewById(R.id.btnCalc);
+        Button btnLayout = findViewById(R.id.btnLayout);
+        Button btnContraint = findViewById(R.id.btnContraint);
 
         btnAddNumbers.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +34,22 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent abc = new Intent(Dashboard.this, Calculator.class);
+                startActivity(abc);
+            }
+        });
+
+        btnLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent abc = new Intent(Dashboard.this, RelativeLinear.class);
+                startActivity(abc);
+            }
+        });
+
+        btnContraint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent abc = new Intent(Dashboard.this, ConstraintLayout.class);
                 startActivity(abc);
             }
         });

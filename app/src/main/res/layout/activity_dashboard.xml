@@ -41,15 +41,19 @@
                         android:text="Calculator"></Button>
                 </LinearLayout>
                 <LinearLayout style="@style/Col">
-                    <Button style="@style/Button"
-                        android:text="Simple Interest">
+                    <Button
+                        android:id="@+id/btnLayout"
+                        style="@style/Button"
+                        android:text="Relative / Linear">
                     </Button>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout style="@style/Row">
                 <LinearLayout style="@style/Col">
-                    <Button style="@style/Button"
-                        android:text="Add Two Numbers">
+                    <Button
+                        android:id="@+id/btnContraint"
+                        style="@style/Button"
+                        android:text="Constraint Layout">
                     </Button>
                 </LinearLayout>
                 <LinearLayout style="@style/Col">
