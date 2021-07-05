@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StickyButtons">
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout android:id="@+id/topContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical"
+            android:background="@color/purple_200"
+            >
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/topContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-60dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+            <Button
+                android:layout_weight="5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Sample Button"
+                ></Button>
+            <Button
+                android:layout_weight="5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Sample Button"
+                ></Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
