@@ -57,15 +57,18 @@
                     </Button>
                 </LinearLayout>
                 <LinearLayout style="@style/Col">
-                    <Button style="@style/Button"
-                        android:text="Simple Interest">
+                    <Button android:id="@+id/btnSticky"
+                        style="@style/Button"
+                        android:text="Sticky Buttons">
                     </Button>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout style="@style/Row">
                 <LinearLayout style="@style/Col">
-                    <Button style="@style/Button"
-                        android:text="Add Two Numbers">
+                    <Button
+                        android:id="@+id/btnPutextra"
+                        style="@style/Button"
+                        android:text="Put Extra">
                     </Button>
                 </LinearLayout>
                 <LinearLayout style="@style/Col">
