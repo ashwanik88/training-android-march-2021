@@ -72,8 +72,8 @@
                     </Button>
                 </LinearLayout>
                 <LinearLayout style="@style/Col">
-                    <Button style="@style/Button"
-                        android:text="Simple Interest">
+                    <Button android:id="@+id/btnFragment" style="@style/Button"
+                        android:text="Fragment Activity">
                     </Button>
                 </LinearLayout>
             </LinearLayout>

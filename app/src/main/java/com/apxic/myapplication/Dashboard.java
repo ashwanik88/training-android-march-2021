@@ -25,6 +25,7 @@ public class Dashboard extends AppCompatActivity {
         Button btnContraint = findViewById(R.id.btnContraint);
         Button btnSticky = findViewById(R.id.btnSticky);
         Button btnPutextra = findViewById(R.id.btnPutextra);
+        Button btnFragment = findViewById(R.id.btnFragment);
 
         btnAddNumbers.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +74,14 @@ public class Dashboard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(Dashboard.this, PutExtraData.class);
                 i.putExtra("USERNAME", "admin");
+                startActivity(i);
+            }
+        });
+
+        btnFragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Dashboard.this, myFragmentActivity.class);
                 startActivity(i);
             }
         });
