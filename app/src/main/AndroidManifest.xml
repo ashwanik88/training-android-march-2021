@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".myFragmentActivity"></activity>
+        <activity
+            android:name=".TabbedActivity"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+        <activity
+            android:name=".BottomNavigation"
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity android:name=".myFragmentActivity" />
         <activity android:name=".PutExtraData" />
         <activity android:name=".StickyButtons" />
         <activity android:name=".ConstraintLayout" />

@@ -79,13 +79,17 @@
             </LinearLayout>
             <LinearLayout style="@style/Row">
                 <LinearLayout style="@style/Col">
-                    <Button style="@style/Button"
-                        android:text="Add Two Numbers">
-                    </Button>
+
+                    <Button
+                        android:id="@+id/btnBottomNav"
+                        style="@style/Button"
+                        android:text="Bottom Navigation"></Button>
                 </LinearLayout>
                 <LinearLayout style="@style/Col">
-                    <Button style="@style/Button"
-                        android:text="Simple Interest">
+                    <Button
+                        android:id="@+id/btnTabbed"
+                        style="@style/Button"
+                        android:text="Tabbed Activity">
                     </Button>
                 </LinearLayout>
             </LinearLayout>

@@ -26,6 +26,8 @@ public class Dashboard extends AppCompatActivity {
         Button btnSticky = findViewById(R.id.btnSticky);
         Button btnPutextra = findViewById(R.id.btnPutextra);
         Button btnFragment = findViewById(R.id.btnFragment);
+        Button btnBottomNav = findViewById(R.id.btnBottomNav);
+        Button btnTabbed = findViewById(R.id.btnTabbed);
 
         btnAddNumbers.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +84,22 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Dashboard.this, myFragmentActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btnBottomNav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Dashboard.this, BottomNavigation.class);
+                startActivity(i);
+            }
+        });
+
+        btnTabbed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Dashboard.this, TabbedActivity.class);
                 startActivity(i);
             }
         });
