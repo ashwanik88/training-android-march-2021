@@ -3,6 +3,7 @@ package com.apxic.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Debug;
 import android.util.Log;
@@ -28,6 +29,7 @@ public class Dashboard extends AppCompatActivity {
         Button btnFragment = findViewById(R.id.btnFragment);
         Button btnBottomNav = findViewById(R.id.btnBottomNav);
         Button btnTabbed = findViewById(R.id.btnTabbed);
+        Button btnLink = findViewById(R.id.btnLink);
 
         btnAddNumbers.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,6 +103,14 @@ public class Dashboard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(Dashboard.this, TabbedActivity.class);
                 startActivity(i);
+            }
+        });
+
+        btnLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.apxic.com/"));
+                startActivity(browserIntent);
             }
         });
 

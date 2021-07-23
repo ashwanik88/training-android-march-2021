@@ -94,9 +94,10 @@
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout style="@style/Row">
-                <LinearLayout style="@style/Col">
-                    <Button style="@style/Button"
-                        android:text="Add Two Numbers">
+                <LinearLayout
+                    style="@style/Col">
+                    <Button  android:id="@+id/btnLink" style="@style/Button"
+                        android:text="Open Link">
                     </Button>
                 </LinearLayout>
                 <LinearLayout style="@style/Col">
