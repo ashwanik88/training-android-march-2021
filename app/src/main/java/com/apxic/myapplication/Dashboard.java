@@ -30,6 +30,7 @@ public class Dashboard extends AppCompatActivity {
         Button btnBottomNav = findViewById(R.id.btnBottomNav);
         Button btnTabbed = findViewById(R.id.btnTabbed);
         Button btnLink = findViewById(R.id.btnLink);
+        Button btnDatabase = findViewById(R.id.btnDatabase);
 
         btnAddNumbers.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,6 +112,14 @@ public class Dashboard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.apxic.com/"));
                 startActivity(browserIntent);
+            }
+        });
+
+        btnDatabase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Dashboard.this, DatabaseConnection.class);
+                startActivity(i);
             }
         });
 

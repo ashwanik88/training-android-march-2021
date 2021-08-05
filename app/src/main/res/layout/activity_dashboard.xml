@@ -101,6 +101,34 @@
                     </Button>
                 </LinearLayout>
                 <LinearLayout style="@style/Col">
+                    <Button android:id="@+id/btnDatabase" style="@style/Button"
+                        android:text="Database Connection">
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/Row">
+                <LinearLayout
+                    style="@style/Col">
+                    <Button  style="@style/Button"
+                        android:text="Open Link">
+                    </Button>
+                </LinearLayout>
+                <LinearLayout style="@style/Col">
+                    <Button style="@style/Button"
+                        android:text="Simple Interest">
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/Row">
+                <LinearLayout
+                    style="@style/Col">
+                    <Button  style="@style/Button"
+                        android:text="Open Link">
+                    </Button>
+                </LinearLayout>
+                <LinearLayout style="@style/Col">
                     <Button style="@style/Button"
                         android:text="Simple Interest">
                     </Button>
