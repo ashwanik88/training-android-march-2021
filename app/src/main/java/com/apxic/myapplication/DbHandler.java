@@ -11,7 +11,7 @@ import java.util.HashMap;
 
 
 public class DbHandler extends SQLiteOpenHelper {
-    private static final int DB_VERSION = 1;
+    private static final int DB_VERSION = 2;
 
     private static final String DB_NAME = "tuition";
 
@@ -56,7 +56,7 @@ public class DbHandler extends SQLiteOpenHelper {
         dbClose(db);
     }
     // Update User Details
-    public int UpdateOption(String student_id, String student_name, String roll_number){
+    public int UpdateStudent(String student_id, String student_name, String roll_number){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cValues = new ContentValues();
         cValues.put(COL_NAME, student_name);
